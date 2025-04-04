@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+<<<<<<< HEAD
+
+function App() {
+  const [count, setCount] = useState(0)
+=======
 import LoginPage from './class2/a01029079/login';
 
 function App() {
@@ -15,6 +20,7 @@ function App() {
   if (page === 'login') {
     return <LoginPage />;
   }
+>>>>>>> 2498aae405efa07cce48fbd7abb36f241d0ff7bd
 
   return (
     <>
@@ -27,7 +33,10 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+<<<<<<< HEAD
+=======
       <button onClick={goToLogin}>A01029079</button>
+>>>>>>> 2498aae405efa07cce48fbd7abb36f241d0ff7bd
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
