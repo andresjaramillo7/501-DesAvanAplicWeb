@@ -1,0 +1,86 @@
+/* Importa la fuente Poppins para un toque moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset básico y configuración de box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376); /* Fondo con degradado */
+  color: #fff;
+}
+
+/* Contenedor principal con efecto glassmorphism */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Encabezado con efecto de texto degradado */
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Lista de música sin viñetas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada ítem de música se muestra como una tarjeta */
+li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Barra lateral decorativa en cada tarjeta */
+li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to bottom, #ff8a00, #e52e71);
+  border-radius: 12px 0 0 12px;
+}
+
+/* Efectos hover para dar dinamismo */
+li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  li {
+    padding: 0.8rem 1.2rem;
+  }
+}
