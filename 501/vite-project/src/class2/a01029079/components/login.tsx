@@ -1,9 +1,10 @@
+// Login.tsx
 import React, { useState } from 'react';
 import Button from './button';
 import Input from './input';
 
 const LoginPage: React.FC = () => {
-  const [email, setUser] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -12,18 +13,18 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <form onSubmit={handleSubmit}>
-        <h2>Iniciar Sesión</h2>
-        <div style={{ marginBottom: '2rem' }}>
+    <div className="login-container">
+      <form onSubmit={handleSubmit} className="login-form">
+        <h2 className="login-title">Iniciar Sesión</h2>
+        <div className="input-group">
           <Input
-            type="username"
-            placeholder="User"
+            type="email"
+            placeholder="Email"
             value={email}
-            onChange={(e) => setUser(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div style={{ marginBottom: '2rem' }}>
+        <div className="input-group">
           <Input
             type="password"
             placeholder="Contraseña"
@@ -31,11 +32,8 @@ const LoginPage: React.FC = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div>
-          <Button text="Entrar" onClick={handleSubmit} />
-        </div>
-        <div>
-        <Button text="Regresarse" onClick={ () => window.location.reload()} />
+        <div className="btn-group">
+          <Button text="Entrar" onClick={handleSubmit} type="submit" />
         </div>
       </form>
     </div>
