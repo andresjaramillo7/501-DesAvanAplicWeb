@@ -6,7 +6,7 @@ const WelcomeMessage = ({ name }: WelcomeMessageProps) => {
   return (
     <div className="welcome-message">
       <h1>Welcome, {name}!</h1>
-      <p>We are glad to have you here.</p>
+      <p>Is always nice to see you here.</p>
     </div>
   );
 };

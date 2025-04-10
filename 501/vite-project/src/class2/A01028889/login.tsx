@@ -1,6 +1,7 @@
 import { useState } from "react";
-import InputField from "./inputField";
-import Button from "./button";
+import InputField from "../../class3/A01028889/inputField";
+import Button from "../../class3/A01028889/button";
+import "./Styles/login.css"; // Importa el archivo CSS
 
 import WelcomeMessage from "./welcomeMessage";
 
