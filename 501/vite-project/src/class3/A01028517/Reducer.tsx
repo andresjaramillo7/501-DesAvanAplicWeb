@@ -112,7 +112,23 @@ export default function App() {
             Reset
           </button>
         </div>
+        
       </div>
+      <a href="/public/A01028517/Menú.html">
+      <button
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          backgroundColor: "#ff5722",
+          color: "white",
+          cursor: "pointer",
+        }}
+      >
+        Regresar al menú
+      </button>
+      </a>
     </div>
   );
 }
