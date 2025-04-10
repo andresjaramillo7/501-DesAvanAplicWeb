@@ -1,0 +1,58 @@
+.shrimp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #cce4f7;
+    padding: 2rem;
+  }
+  
+  .shrimp-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .shrimp-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .shrimp-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .yes-button {
+    background-color: #38a169;
+  }
+  
+  .yes-button:hover {
+    background-color: #2f855a;
+  }
+  
+  .no-button {
+    background-color: #e53e3e;
+  }
+  
+  .no-button:hover {
+    background-color: #c53030;
+  }
+  
+  .shrimp-img-container {
+    margin-top: 2rem;
+  }
+  
+  .shrimp-img {
+    width: 16rem;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
