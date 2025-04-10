@@ -11,6 +11,7 @@ const Music: React.FC = () => {
   return (
     <div>
       <h1>Música Favorita de Andrés</h1>
+      <a href="../../../../../src/class3/a01029079/public/menu.html" className='btn'> Return </a>
       <MusicList onSelectSong={handleSelectSong} />
     </div>
   );
