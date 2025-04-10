@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Login from './login_class3'
+import Menu from './menu'
 
 createRoot(document.getElementById('home')!).render(
   <StrictMode>
-    <Login />
+    <Menu />
   </StrictMode>,
 )
