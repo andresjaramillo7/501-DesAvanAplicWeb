@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Login from "./Login.tsx";
+import Class1Example from "./Class1Example.tsx";
 import Button from "./components/Button.tsx";
 import "./Class1.css"
 
@@ -16,7 +16,12 @@ function Class1() {
         </div>
       </div>
       <h1>Class 1 Example A01027983</h1>
-      <Login />
+      <p>
+        This example shows the use of arrow functions with destructuring
+        for parsing the different attributes of the defined components
+        which also apply useState() hooks.
+      </p>
+      <Class1Example />
     </>
   )
 }
