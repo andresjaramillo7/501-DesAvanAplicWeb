@@ -1,22 +1,21 @@
-import React from 'react';
+import React from "react";
 
-interface InputFieldProps {
-  type: string;
-  placeholder: string;
+const InputField = ({
+  value,
+  onChange,
+}: {
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-const InputField: React.FC<InputFieldProps> = ({ type, placeholder, value, onChange}) => {
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}) => {
   return (
     <input
-    type={type}
-    placeholder={placeholder}
-    value={value}
-    onChange={onChange}
-    style{{ padding: '10px', margin: '10px'}}
+      type="text"
+      value={value}
+      onChange={onChange}
+      style={{ padding: "10px", margin: "10px" }} 
     />
   );
 };
 
 export default InputField;
+
