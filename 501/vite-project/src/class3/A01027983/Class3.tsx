@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Login from "./Login.tsx";
+import Class3Example from "./Class3Example.tsx";
 import Button from "./components/Button.tsx";
 import "./Class3.css"
 
