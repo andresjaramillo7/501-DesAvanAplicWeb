@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Login from "./Login.tsx";
+import Class2Example from "./Class2Example.tsx";
 import Button from "./components/Button.tsx";
 import "./Class2.css"
 
@@ -16,7 +16,7 @@ function Class2() {
         </div>
       </div>
       <h1>Class 2 Example A01027983</h1>
-      <Login />
+      <Class2Example />
     </>
   )
 }
