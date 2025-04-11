@@ -73,6 +73,7 @@ const TravelRequestForm: React.FC = () => {
         onChange={handleInputChange('purpose')}
       />
       <button onClick={handleSubmit}>Submit</button>
+      <a href="./Menu.html">Menu</a>
     </div>
   );
 };

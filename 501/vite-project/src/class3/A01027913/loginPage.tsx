@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import FieldInput from "../../class2/A01027913/inputField";
 import Boton from "../../class2/A01027913/boton";
 
-const Login = () => {
+const LoginPage = () => {
     const [username, setUsername] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [error, setError] = useState<string>('');
@@ -53,4 +53,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginPage;

@@ -24,6 +24,7 @@ const AreYouAShrimp: React.FC = () => {
                 <button className="shrimp-button-no" onClick={handleNo}>
                     No
                 </button>
+                <a href="./Menu.html" className="return-menu">Menu</a>
             </div>
 
             {isShrimp && (
@@ -38,5 +39,6 @@ const AreYouAShrimp: React.FC = () => {
         </div>
     );
 };
+
 
 export default AreYouAShrimp
