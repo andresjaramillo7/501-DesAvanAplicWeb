@@ -8,7 +8,7 @@ const Class3Example = () => {
   return (
     <div>
       <h1>Clicked the button {timesClicked} times!</h1>
-      <Button label="Submit" onClick={() => setTimesClicked(timesClicked + 1)} />
+      <Button label="Click me!" onClick={() => setTimesClicked(timesClicked + 1)} />
     </div>
   );
 };
