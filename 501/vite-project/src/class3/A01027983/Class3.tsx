@@ -16,7 +16,7 @@ function Class3() {
         </div>
       </div>
       <h1>Class 3 Example A01027983</h1>
-      <Login />
+      <Class3Example />
     </>
   )
 }
