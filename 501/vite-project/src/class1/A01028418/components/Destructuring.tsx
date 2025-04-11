@@ -1,15 +1,24 @@
-import React from 'react'
+import React from "react";
+import "../class1.css"
 
-const person = {name: Luis, age: 20 , hobby: "Skating" };
-const { name, age, hobby } = person;
+const Destructuring = ({ user }: { user: { name: string; age: number; country: string; skills: string[] } }) => {
+  // Usamos destructuring para extraer propiedades del objeto `user`
+  const { name, age, country, skills } = user;
 
-export const Destructuring: React.FC = () => {
-  return(
-    <div className="card">
-      <h2>Destructuración</h2>
-      <p>Nombre: {name}</p>
+  return (
+    <div>
+      <h2>Perfil de {name}</h2>
       <p>Edad: {age}</p>
-      <p>Hobby: {hobby}</p>
-    </div>  
+      <p>País: {country}</p>
+      <p>Habilidades:</p>
+      <ul>
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
+
+export default Destructuring;
+

@@ -1,15 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const userName = "Luis";
-const city = "Ciudad de México";
+const TemplateLiterals = ({ user }: { user: { name: string; activity: string; time: string } }) => {
+  // Usamos un template literal para generar un mensaje dinámico
+  const message = `Hola, ${user.name}! ¡Sigue disfrutando al ${user.activity}!`;
 
-export const TemplateLiteral: React.FC = () => {
-    const message = `Hola, ${userName}. ¡Bienvenido a ${city}!`; // Template Literal
-    return (
-        <div className="card">
-            <h2>Template Literals</h2>
-            <p>{message}</p>
-        </div>
-    );
+  return <p>{message}</p>;
 };
+
+export default TemplateLiterals;
 
