@@ -38,11 +38,17 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+        <a href='../src/class3/A01029143/pages/Menu.html'>
+          Menu A01029143
+        </a>
+      </div>
       <a href="/public/A01028418/menu.html">
         <button>A01028418</button>
       </a>
+
     </>
   );
 }
 
-export default App;
+export default App
