@@ -37,6 +37,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <a href="/public/A01028418/menu.html">
+        <button>A01028418</button>
+      </a>
     </>
   );
 }
