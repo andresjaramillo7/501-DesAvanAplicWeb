@@ -29,8 +29,12 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <div>
+          <a href="/public/A01027913/Menu.html">
+            <button>Menu</button>
+          </a>
+        </div>
         <a href="/public/A01028517/Menú.html"><button>Link menu A01028517</button></a>
-        
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -46,7 +50,6 @@ function App() {
       <a href="/public/A01028418/menu.html">
         <button>A01028418</button>
       </a>
-
     </>
   );
 }
