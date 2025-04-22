@@ -45,6 +45,7 @@ function App() {
       <div>
         <a href="/src/class1/A01027983/">
           <button>A01027983</button>
+        </a>
         <a href='../src/class3/A01029143/pages/Menu.html'>
           Menu A01029143
         </a>
