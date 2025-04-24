@@ -30,7 +30,7 @@ function App() {
         <p className="read-the-docs">
           Click on the Vite and React logos to learn more
         </p>
-        <a href={'../src/class3/A01028889/home.html'} className="button-link">
+        <a href={'../src/A01028889/home.html'} className="button-link">
           A01028889's Menu
         </a>
       </div >

@@ -6,7 +6,7 @@ function Class2() {
       <h1 className="class2-title">Class 2</h1>
       <p className="class2-description">Login Component.</p>
       <Login />
-      <a href="/src/class3/A01028889/home.html" className="class2-button-link">
+      <a href="/src/class3/A01028889/milestone1.html" className="class2-button-link">
         Go to A01028889's Menu
       </a>
     </div>
