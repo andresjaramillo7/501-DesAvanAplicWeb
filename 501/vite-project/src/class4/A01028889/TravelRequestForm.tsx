@@ -2,6 +2,8 @@ import React, { useState, ChangeEvent } from 'react';
 import InputField from '../../class3/A01028889/inputField';
 import Button from '../../class3/A01028889/button';
 
+import './Styles/TravelRequestForm.css'
+
 const TravelRequestForm: React.FC = () => {
   const [destination, setDestination] = useState('');
   const [startDate, setStartDate] = useState('');
