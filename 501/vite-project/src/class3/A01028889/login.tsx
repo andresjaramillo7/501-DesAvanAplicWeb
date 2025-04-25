@@ -9,17 +9,22 @@ const initialState = {
   name: "",
   password: "",
   isLoggedIn: false,
+  error: "", // Added error state
 };
 
 // Reducer
 function reducer(state: typeof initialState, action: any) {
   switch (action.type) {
     case "SET_NAME":
-      return { ...state, name: action.payload };
+      return { ...state, name: action.payload, error: "" }; // Clear error on input change
     case "SET_PASSWORD":
-      return { ...state, password: action.payload };
+      return { ...state, password: action.payload, error: "" }; // Clear error on input change
     case "LOGIN":
-      return { ...state, isLoggedIn: true };
+      if (state.name === "admin" && state.password === "password") {
+        return { ...state, isLoggedIn: true, error: "" }; // Successful login
+      } else {
+        return { ...state, error: "Invalid username or password" }; // Set error message
+      }
     default:
       return state;
   }
@@ -28,29 +33,28 @@ function reducer(state: typeof initialState, action: any) {
 function Login() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  if (state.isLoggedIn) {
+    return <WelcomeMessage name={state.name} />;
+  }
+
   return (
-    <>
-      {state.isLoggedIn ? (
-        <WelcomeMessage name={state.name} />
-      ) : (
-        <div className="login-container">
-          <h1>Login</h1>
-          <InputField
-            type="text"
-            placeholder="Name"
-            value={state.name}
-            onChange={(e) => dispatch({ type: "SET_NAME", payload: e.target.value })}
-          />
-          <InputField
-            type="password"
-            placeholder="Password"
-            value={state.password}
-            onChange={(e) => dispatch({ type: "SET_PASSWORD", payload: e.target.value })}
-          />
-          <Button label="Login" onClick={() => dispatch({ type: "LOGIN" })} />
-        </div>
-      )}
-    </>
+    <div className="login-container">
+      <h1>Login</h1>
+      <InputField
+        type="text"
+        placeholder="Name"
+        value={state.name}
+        onChange={(e) => dispatch({ type: "SET_NAME", payload: e.target.value })}
+      />
+      <InputField
+        type="password"
+        placeholder="Password"
+        value={state.password}
+        onChange={(e) => dispatch({ type: "SET_PASSWORD", payload: e.target.value })}
+      />
+      <Button label="Login" onClick={() => dispatch({ type: "LOGIN" })} />
+      {state.error && <p className="error-message">{state.error}</p>} {/* Display error */}
+    </div>
   );
 }
 
