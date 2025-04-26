@@ -16,7 +16,7 @@ function Milestone2Menu() {
   return (
     <div className="menu-container">
       <h1 className="menu-title">Milestone 2</h1>
-      <h3 className="Participants">A01028889 - A01029079</h3>
+      <h3 className="Participants">A01028889 - A01029079 - A01027893 - A01029143</h3>
       <ul className="menu-list">
         <li>
           <Button label="Go Class 4" onClick={() => setSelectedClass('class4')} />
