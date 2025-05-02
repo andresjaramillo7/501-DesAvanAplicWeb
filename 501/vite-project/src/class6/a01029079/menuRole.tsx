@@ -1,5 +1,5 @@
 // src/components/menuRole.tsx
-import { FC, useContext } from 'react';
+import React, { FC, useContext } from 'react';
 import { UserContext } from './userContext';
 
 const Menu: FC = () => {

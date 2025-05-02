@@ -1,5 +1,5 @@
 // src/components/dashboard.tsx
-import { FC, useContext } from 'react';
+import React, { FC, useContext } from 'react';
 import { UserContext } from './userContext';
 import './Styles/dashboard.css';
 
