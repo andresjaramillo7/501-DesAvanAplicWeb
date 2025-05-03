@@ -1,7 +1,7 @@
 // src/components/Menu.tsx
 import React from 'react';
 
-const Menu2: React.FC = () => {
+const Menu3: React.FC = () => {
 
   return (
     <div className="menu-container">
@@ -17,4 +17,4 @@ const Menu2: React.FC = () => {
   );
 };
 
-export default Menu2;
+export default Menu3;
