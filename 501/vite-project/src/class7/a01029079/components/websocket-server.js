@@ -1,6 +1,6 @@
-const WebSocket = require('ws');
+import WebSocket, { WebSocketServer } from 'ws';
 
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocketServer({ port: 8080 });
 
 wss.on('connection', (ws) => {
   console.log('New client connected');
@@ -9,11 +9,11 @@ wss.on('connection', (ws) => {
     console.log(`Received: ${message}`);
 
     // Broadcast to all connected clients
-    wss.clients.forEach((client) => {
+    for (const client of wss.clients) {
       if (client.readyState === WebSocket.OPEN) {
         client.send(message);
       }
-    });
+    }
   });
 
   ws.on('close', () => {
