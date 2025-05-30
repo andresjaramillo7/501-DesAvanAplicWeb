@@ -1,5 +1,5 @@
 import React from 'react';
-import MusicItem from './musicItem.tsx';
+import MusicItem from './musicItem';
 import { songs, Song } from '../data';
 
 interface MusicListProps {
